@@ -1,0 +1,162 @@
+{{!-- <a class="btn btn-info" href="/brand/add">Add new brand</a>
+<a class="btn btn-danger" href="/brand/deleteall">Delete all</a>
+<br><br>
+<table class="table table-secondary">
+   <tr>
+      <th>Brand name</th>
+      <th>Brand country</th>
+      <th colspan="2">Menu</th>
+   </tr>
+   {{#each brands }}
+   <tr>
+      <td>
+         <a href="/brand/detail/{{ _id }}">
+            {{ name }}
+         </a>
+      </td>
+      <td>{{ country }}</td>
+      <td>
+         <a class="btn btn-warning" href="/brand/edit/{{ _id }}">Edit</a>
+      </td>
+      <td>
+         <a class="btn btn-danger" href="/brand/delete/{{ _id }}"
+         onclick="return confirm('Are you sure to delete this brand ?');"
+         >Delete</a>
+      </td>
+   </tr>
+   {{/each}}
+</table> --}}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+   
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+  
+      <!--  Header End -->
+      <div class="container-fluid">
+        
+       <title>Sản Phẩm</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Danh Sách Sản Phẩm</h2>
+
+{{!-- <table>
+  <thead>
+    <tr>
+      <th>Số Thứ Tự</th>
+      <th>Tên Sản Phẩm</th>
+	  <th>Image</th>
+      <th>Danh Mục</th>
+      <th>Giá Cả</th>
+	  <th>Menu</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  
+   <tr>
+      {{#each brands }}
+	<td></td>
+	<td>{{name}}</td>
+	<td>{{country}}</td>
+	<td>dfvdf</td>
+	<td>gf</td>
+	<td>
+		<button>Edit</button>
+		<button>Delete</button>
+	</td>
+   </tr>
+  {{/each}}
+  </tbody>
+</table> --}}
+
+<a class="btn btn-info" href="/brand/add">Add new brand</a>
+<a class="btn btn-danger" href="/brand/deleteall">Delete all</a>
+<br><br>
+<table class="table table-secondary">
+   <tr>
+      <th>Brand name</th>
+      <th>Brand country</th>
+      <th colspan="2">Menu</th>
+   </tr>
+   {{#each brands }}
+   <tr>
+      <td>
+         <a href="/brand/detail/{{ _id }}">
+            {{ name }}
+         </a>
+      </td>
+      <td>{{ country }}</td>
+      <td>
+         <a class="btn btn-warning" href="/brand/edit/{{ _id }}">Edit</a>
+      </td>
+      <td>
+         <a class="btn btn-danger" href="/brand/delete/{{ _id }}"
+         onclick="return confirm('Are you sure to delete this brand ?');"
+         >Delete</a>
+      </td>
+   </tr>
+   {{/each}}
+</table>
+ {{!-- <a class="btn btn-warning" href="/add">Add</a> --}}
+
+
+      </div>
+    </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+     
+      <!--  Header End -->
+      <div class="container-fluid">
+    
+       <title>Sản Phẩm</title>
+  <style>
+    
+    /* Add your styles here */
+/* styles.css */
+
+.mobile-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.color-input {
+  margin-right: 10px;
+}
+
+.brand-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+
+<h2>Danh Sách Sản Phẩm</h2>
+
+<form action="/toy/add" method="post" class="mobile-form">
+   <h1>Add New Toy</h1>
+   <label for="model">Toy model:</label>
+   <input type="text" name="model" id="model" class="form-input" required>
+   <br><br>
+   <label for="image">Toy image:</label>
+   <input type="url" name="image" id="image" class="form-input" required>
+   <br><br>
+   <label for="color">Toy color:</label>
+   <input type="text" name="color" id="color" class="form-input" required>
+   {{!-- <label>Toy color:</label>
+   <input type="radio" name="color" value="Black" class="color-input"> Black
+   <input type="radio" name="color" value="White" class="color-input"> White
+   <input type="radio" name="color" value="Yellow" class="color-input"> Yellow
+   <input type="radio" name="color" value="Blue" class="color-input"> Blue --}}
+   <br><br>
+   
+  
+   <label for="brand">Toy brand:</label>
+   <select name="brand" id="brand" class="brand-select">
+      {{#each brands }}
+      <option value="{{ _id }}"> {{ name }}</option>
+      {{/each}}
+   </select>
+   <br><br>
+   <input type="submit" value="Add" class="submit-button">
+</form>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+
+</html>
