@@ -17,7 +17,7 @@ hbs.registerHelper('equal', require('handlebars-helper-equal'))
 
 // 2. config 'mongoose' module
 var mongoose = require('mongoose');
-var uri = "mongodb://localhost:27017/gch1107";
+var uri = "mongodb+srv://nguyenbaanh112003:nba01112003@cluster0.oe7onke.mongodb.net/toy";
 mongoose.set('strictQuery', true); //ignore mongoose warning
 mongoose.connect(uri)
   .then(() => console.log('ok'))
