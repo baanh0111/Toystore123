@@ -69,7 +69,7 @@
 </head>
 <body>
 
-<h2>Danh Sách Sản Phẩm</h2>
+<h2>Menu</h2>
 
 <form action="/toy/edit/{{ mobile._id }}" method="post" class="edit-mobile-form">
    <h1>Edit Toy</h1>
@@ -80,22 +80,9 @@
    <input type="url" name="image" id="image" class="form-input" required value="{{ mobile.image }}">
    <img src="{{ mobile.image }}" alt="" class="mobile-image" width="100" height="100">
    <br><br>
-   {{!-- <label>Mobile color:</label>
-   <div class="color-options">
-      <input type="radio" name="color" value="Black" id="colorBlack" class="color-input" {{#equal mobile.color "Black"}}checked="true"{{/equal}}> 
-      <label for="colorBlack">Black</label>
-
-      <input type="radio" name="color" value="White" id="colorWhite" class="color-input" {{#equal mobile.color "White"}}checked="true"{{/equal}}> 
-      <label for="colorWhite">White</label>
-
-      <input type="radio" name="color" value="Yellow" id="colorYellow" class="color-input" {{#equal mobile.color "Yellow"}}checked="true"{{/equal}}> 
-      <label for="colorYellow">Yellow</label>
-
-      <input type="radio" name="color" value="Blue" id="colorBlue" class="color-input" {{#equal mobile.color "Blue"}}checked="true"{{/equal}}> 
-      <label for="colorBlue">Blue</label>
-   </div> --}}
+   
    <label for="model">Toy Price:</label>
-   <input type="text" name="color" id="color" class="form-input" required value="{{ mobile.color }}">
+   <input type="text" name="price" id="price" class="form-input" required value="{{ mobile.color }}">
    <br><br>
 
    <input type="submit" value="Edit" class="submit-button">

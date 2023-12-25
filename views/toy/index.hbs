@@ -58,7 +58,7 @@
 </head>
 <body>
 
-<h2>Danh Sách Sản Phẩm</h2>
+<h2>Menu</h2>
 
 <a class="btn btn-info" href="/toy/add">Add New Toy</a>
 <a class="btn btn-primary" href="/toy/sort/asc">Sort ASC</a>
@@ -73,15 +73,21 @@
       <th>Toy model</th>
       <th>Price</th>
       <th>Toy brand</th>
+      <th>Toy country</th>
       <th>Toy image</th>
+      <th>Edit</th>
+      
+      
       
       <th colspan="2">Menu</th>
    </tr>
+   
    {{#each mobiles }}
    <tr>
       <td>{{ model }}</td>
-      <td>{{ color }}</td>
+      <td>{{ price }}</td>
       <td>{{ brand.name }}</td>
+      <td>{{ brand.country }}</td>
       <td>
          <img src="{{ image }}" alt="" width="100" height="120">
       </td>

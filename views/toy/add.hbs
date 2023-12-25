@@ -64,18 +64,18 @@
 </head>
 <body>
 
-<h2>Danh Sách Sản Phẩm</h2>
+{{!-- <h2>Menu</h2> --}}
 
 <form action="/toy/add" method="post" class="mobile-form">
    <h1>Add New Toy</h1>
    <label for="model">Toy model:</label>
-   <input type="text" name="model" id="model" class="form-input" required>
+   <input type="text" name="model" id="" class="form-input" required>
    <br><br>
    <label for="image">Toy image:</label>
-   <input type="url" name="image" id="image" class="form-input" required>
+   <input type="url" name="image" id="" class="form-input" required>
    <br><br>
-   <label for="color">Price:</label>
-   <input type="text" name="color" id="color" class="form-input" required>
+   <label for="pirce">Price:</label>
+   <input type="number" name="price" id="" class="form-input" required>
    {{!-- <label>Toy color:</label>
    <input type="radio" name="color" value="Black" class="color-input"> Black
    <input type="radio" name="color" value="White" class="color-input"> White
@@ -88,6 +88,12 @@
    <select name="brand" id="brand" class="brand-select">
       {{#each brands }}
       <option value="{{ _id }}"> {{ name }}</option>
+      {{/each}}
+   </select>
+    <label for="brand">Toy country:</label>
+   <select name="country" id="country" class="brand-select">
+      {{#each brands }}
+      <option value="{{ _id }}"> {{ country }}</option>
       {{/each}}
    </select>
    <br><br>

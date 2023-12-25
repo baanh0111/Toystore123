@@ -1,12 +1,14 @@
 var mongoose = require('mongoose');
 var MobileSchema = mongoose.Schema({
    model: String,
-   color: String,
+   price: Number,
    image: String,
+   country: String,
    brand: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'brands'  // 'brands': collection
    }
+   
 });
 //Relationship : mobiles (many) - brands (one)
 
